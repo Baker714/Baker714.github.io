@@ -6,12 +6,11 @@
       <div id="box">
           <h1>An Attempt at a Website</h1>
           <h4>by Andrew James Baker</h4>
-          <ul>
-            <li onClick="location.href='home'">Home</li>
-            <li onClick="location.href='resume'">Resume</li>
-            <li onClick="location.href='games'">Games</li>
-            <!--<li onClick="location.href='/games'">Games</li>-->
-          </ul>
+          <div class="router">
+            <a class="routerButton" href="/home">Home</a>
+            <a class="routerButton" href="/resume">Resume</a>
+            <a class="routerButton" href="/games">Games</a>
+          </div>
       </div>
       <router-outlet align="center"></router-outlet>
   </body>

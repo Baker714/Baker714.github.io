@@ -37,28 +37,33 @@ div#box {
   border-width: 3px;
 }
 
-ul {
+.router {
+  padding-left: 10px;
   display: flex;
   list-style: none;
   margin: 0;
-  border-width: 1px;
+  border-width: 2px;
   border-right-style: solid;
 }
 
-li {
+.routerButton {
+  color: black;
   display: block;
   height: 40px;
-  border-width: 1px;
+  border-width: 2px;
+  border-color: black;
   border-left-style: solid;
   display: inline;
   padding-left: 8px;
   padding-right: 8px;
   font-family: Verdana, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   padding-top: 20px;
   cursor: pointer;
+  text-decoration: none;
+  text-decoration-color: black;
 }
 
-li:hover{
+a:hover{
   background-color: #33cc33;
 }

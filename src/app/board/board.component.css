@@ -39,4 +39,5 @@ button {
   color: #f2f2f2;
   text-shadow: -.75px -.75px grey, .75px -.75px grey, -.75px .75px grey, .75px .75px grey;
   background-color: #ccff99;
+  cursor: pointer;
 }
