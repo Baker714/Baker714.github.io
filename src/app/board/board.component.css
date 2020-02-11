@@ -12,7 +12,7 @@ app-square{
 
 h1 {
   text-align: center;
-  color: white;
+  color: #f2f2f2;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: -1px -1px grey, 1px -1px grey, -1px 1px grey, 1px 1px grey;
 }
@@ -20,14 +20,14 @@ h1 {
 h2 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: #f2f2f2;
   text-shadow: -1px -1px grey, 1px -1px grey, -1px 1px grey, 1px 1px grey;
 }
 
 h3 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: #f2f2f2;
   text-shadow: -1px -1px grey, 1px -1px grey, -1px 1px grey, 1px 1px grey;
 }
 
@@ -36,8 +36,7 @@ button {
   height: 50px;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: #f2f2f2;
   text-shadow: -.75px -.75px grey, .75px -.75px grey, -.75px .75px grey, .75px .75px grey;
   background-color: #ccff99;
-  shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
 }
