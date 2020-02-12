@@ -1,7 +1,7 @@
 h1 {
   color: #f2f2f2;
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: -1px -1px grey, 1px -1px grey, -1px 1px grey, 1px 1px grey;
+  text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
   padding-left: 15px;
   padding-right: 6px;
   font-size: 24px;
@@ -30,7 +30,7 @@ h4 {
 div#box {
   display: flex;
   align-self: center;
-  background: #ccff99;
+  background: #4dff88;
   margin: 0;
   padding: 0;
   border-bottom-style: solid;
