@@ -1,1 +1,6 @@
-
+.resumeBox {
+  padding-top: 10px;
+  width: 850px;
+  height: 800px;
+  border-style: none;
+}
