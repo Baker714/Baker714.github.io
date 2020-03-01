@@ -13,7 +13,7 @@ const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'resume', component: ResumeDisplayComponent},
   {path: 'games', component: GamesComponent },
-  {path: '', redirectTo: '/home', pathMatch: 'full'}
+  {path: '**', redirectTo: '/home', pathMatch: 'full'}
 ]
 
 @NgModule({
