@@ -7,14 +7,19 @@ import { Instrument } from 'piano-chart';
   styleUrls: ['./piano.component.css']
 })
 export class PianoComponent implements OnInit {
+
   constructor() {
-    const piano = new Instrument(document.getElementById("pianoContainer"));
-    piano.create();
   }
 
   ngOnInit() {
-    const piano = new Instrument(document.getElementById("pianoContainer"));
+    const piano = new Instrument(document.getElementById("pianoContainer"), {
+      startOctave: 3,
+      endOctave: 4,
+      showNoteNames: "onpress",
+      keyPressStyel: "subtle",
+    });
     piano.create();
+    piano.keyDown("A3");
   }
 
 }
