@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Instrument } from 'piano-chart';
+import * as WebMidi from 'webmidi';
+import * as Tone from 'tone';
+
 
 @Component({
   selector: 'app-piano',
@@ -16,10 +19,12 @@ export class PianoComponent implements OnInit {
       startOctave: 3,
       endOctave: 4,
       showNoteNames: "onpress",
-      keyPressStyel: "subtle",
+      keyPressStyle: "subtle",
     });
+    const synth = new Tone.Synth().toDestination();
     piano.create();
-    piano.keyDown("A3");
+    piano.addKeyMouseDownListener((key) => {piano.keyDown(key);synth.triggerAttackRelease(String(key), "8n");});
+    piano.addKeyMouseUpListener((key) => {piano.keyUp(String(key));})
   }
 
 }
