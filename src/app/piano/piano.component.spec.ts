@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { ResumeDisplayComponent } from './resume-display.component';
+import { PianoComponent } from './piano.component';
 
-describe('ResumeDisplayComponent', () => {
-  let component: ResumeDisplayComponent;
-  let fixture: ComponentFixture<ResumeDisplayComponent>;
+describe('PianoComponent', () => {
+  let component: PianoComponent;
+  let fixture: ComponentFixture<PianoComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResumeDisplayComponent ]
+      declarations: [ PianoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ResumeDisplayComponent);
+    fixture = TestBed.createComponent(PianoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
