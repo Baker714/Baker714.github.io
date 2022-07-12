@@ -1,0 +1,17 @@
+<div align="center">
+<h1>Current Player: {{ player }}</h1>
+<button (click)="newGame()">Start New Game</button>
+<div *ngIf="!winner">
+  <br>
+  <br>
+</div>
+<h2 *ngIf="winner">Player {{ winner }} wins!</h2>
+<main>
+    <app-chess-square class="app-chess-square"
+      *ngFor="let val of squares; let i = index;"
+      [ngStyle]="{'background-color': getColor(i)}"
+      [value]="val.piece"
+      (click)="makeMove(i,val);">
+    </app-chess-square>
+</main>
+</div>

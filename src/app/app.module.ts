@@ -9,12 +9,15 @@ import { ResumeDisplayComponent } from './resume-display/resume-display.componen
 import { GamesComponent } from './games/games.component';
 import { HomeComponent } from './home/home.component';
 import { PianoComponent } from './piano/piano.component';
+import { ChessBoardComponent } from './chess-board/chess-board.component';
+import { ChessSquareComponent } from './chess-board/chess-square/chess-square.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'resume', component: ResumeDisplayComponent},
   {path: 'games', component: GamesComponent },
   {path: 'piano', component: PianoComponent },
+  {path: 'chess', component: ChessBoardComponent },
   {path: '**', redirectTo: '/home', pathMatch: 'full'}
 ]
 
@@ -26,7 +29,9 @@ const appRoutes: Routes = [
     ResumeDisplayComponent,
     GamesComponent,
     HomeComponent,
-    PianoComponent
+    PianoComponent,
+    ChessBoardComponent,
+    ChessSquareComponent
   ],
   imports: [
     BrowserModule,
